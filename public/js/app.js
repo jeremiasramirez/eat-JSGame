@@ -572,7 +572,7 @@ function rand(max) {
       player.unbindKeyDown();
       player = null;
     }
-    var e = document.getElementById("diffSelect");
+    var e = document.getElementById("selectItems");
     difficulty = e.options[e.selectedIndex].value;
     cellSize = mazeCanvas.width / difficulty;
     maze = new Maze(difficulty, difficulty);
