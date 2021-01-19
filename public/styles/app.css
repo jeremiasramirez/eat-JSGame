@@ -68,7 +68,12 @@ select:focus {
 }
 
 .containerSelect {
+ 
   display: inline-block;
+}
+#selectItems{
+  width:180px;
+  text-align:center;
 }
 .custom-select select {
   -webkit-appearance: none;
@@ -110,10 +115,21 @@ select:focus {
   width: auto;
   margin: auto;
 }
+#page #menu section{
+  width: 100%;
+  display:flex;
+ 
+  
+  justify-content: space-between;
+  align-items: center;
+}
 #page #menu {
   margin: auto;
-  padding: 10px;
-  height: 65px;
+  padding: 2px 10px;
+  height: 55px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-image:linear-gradient(to right,rgb(68, 9, 60),rgb(129, 20, 80)); 
   box-sizing: border-box;
 }
 #page #menu h1 {
@@ -211,3 +227,16 @@ select:focus {
   }
 }
 
+.flaticon{
+  width:28px;
+}
+
+.startGame{
+  background-color: transparent;
+  border:none;
+  cursor:pointer;
+}
+
+.iconpage{
+  width:50px;
+}

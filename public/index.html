@@ -30,8 +30,16 @@
         </div>
  
       
-      <div id="menu">
-        <div class="containerSelect animate">
+      <div id="menu" class="animate">
+       
+        <section>
+          
+          <article>
+            <img src="./assets/icon/icon.svg" class="iconpage" alt="icon">
+           
+          </article>
+
+          <div class="containerSelect animate">
             
             <select id="selectItems" >
                 <option value="10">Facil</option>
@@ -40,13 +48,22 @@
                 <option value="38">Nivel Dios</option>                                      
             </select>
 
+        </div> 
+
+        <div id="startMazeBtn" class="startGame" onclick="startGame()" value="Iniciar" > 
+          <img src="./assets/flaticons/play.svg" class="flaticon" alt="play">
+         
         </div>
-        <input id="startMazeBtn"   type="button" onclick="startGame()" value="Iniciar" />
+
+
+
+
+        </section>
       </div>
 
 
       <div id="view">
-
+  
         <div id="mazeContainer" class="canvasContainer ">
           <canvas id="mazeCanvas" class="border animate" height="1100" width="1100"></canvas>
         </div>
