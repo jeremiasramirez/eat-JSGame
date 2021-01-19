@@ -34,3 +34,9 @@ function rand(max) {
     virtCanvas.remove();
     return spriteOutput;
   }
+
+  function displayVictoryMess(moves) {
+    document.getElementById("moves").innerHTML = "You Moved " + moves + " Steps.";
+    toggleVisablity("Message-Container");  
+  }
+  
