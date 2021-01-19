@@ -454,7 +454,7 @@ function rand(max) {
           fingerCount,
           fingerData
         ) {
-          console.log(direction);
+      
           switch (direction) {
             case "up":
               check({
@@ -518,7 +518,7 @@ function rand(max) {
     var isComplete = () => {
       if(completeOne === true && completeTwo === true)
          {
-           console.log("Runs");
+     
            setTimeout(function(){
              makeMaze();
            }, 500);         
@@ -533,7 +533,6 @@ function rand(max) {
     sprite.onload = function() {
       sprite = changeBrightness(1.2, sprite);
       completeOne = true;
-      console.log(completeOne);
       isComplete();
     };
   
@@ -544,8 +543,7 @@ function rand(max) {
     finishSprite.setAttribute("crossOrigin", " ");
     finishSprite.onload = function() {
       finishSprite = changeBrightness(1.1, finishSprite);
-      completeTwo = true;
-      console.log(completeTwo);
+      completeTwo = true; 
       isComplete();
     };
     
