@@ -40,3 +40,54 @@ function rand(max) {
     toggleVisablity("Message-Container");  
   }
   
+
+
+
+
+  function toggleVisablity(id) {
+    if (document.getElementById(id).style.visibility == "visible") {
+      document.getElementById(id).style.visibility = "hidden";
+    } else {
+      document.getElementById(id).style.visibility = "visible";
+    }
+  }
+  
+  function Maze(Width, Height) {
+    var mazeMap;
+    var width = Width;
+    var height = Height;
+    var startCoord, endCoord;
+    var dirs = ["n", "s", "e", "w"];
+    var modDir = {
+      n: {
+        y: -1,
+        x: 0,
+        o: "s"
+      },
+      s: {
+        y: 1,
+        x: 0,
+        o: "n"
+      },
+      e: {
+        y: 0,
+        x: 1,
+        o: "w"
+      },
+      w: {
+        y: 0,
+        x: -1,
+        o: "e"
+      }
+    };
+  
+    this.map = function() {
+      return mazeMap;
+    };
+    this.startCoord = function() {
+      return startCoord;
+    };
+    this.endCoord = function() {
+      return endCoord;
+    };
+  
