@@ -526,7 +526,7 @@ function rand(max) {
     };
     sprite = new Image();
     sprite.src =
-      "https://image.ibb.co/dr1HZy/Pf_RWr3_X_Imgur.png" +
+      "../assets/images/crab.webp" +
       "?" +
       new Date().getTime();
     sprite.setAttribute("crossOrigin", " ");
@@ -537,7 +537,7 @@ function rand(max) {
     };
   
     finishSprite = new Image();
-    finishSprite.src = "https://image.ibb.co/b9wqnJ/i_Q7m_U25_Imgur.png"+
+    finishSprite.src = "../assets/images/apple.svg"+
     "?" +
     new Date().getTime();
     finishSprite.setAttribute("crossOrigin", " ");
