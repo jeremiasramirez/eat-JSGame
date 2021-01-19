@@ -520,7 +520,7 @@ function rand(max) {
          {
      
            setTimeout(function(){
-             makeMaze();
+             startGame();
            }, 500);         
          }
     };
@@ -566,12 +566,23 @@ function rand(max) {
     }
   };
   
-  function makeMaze() {
-    //document.getElementById("mazeCanvas").classList.add("border");
+  const addStyleButton = ()=>{
+    
+    const elementButton = document.getElementById("startMazeBtn");
+    elementButton.classList.add("openStart");
+    
+    setTimeout(()=>{
+      elementButton.classList.remove('openStart');
+    },300);
+  }
+  function startGame() {
+    
     if (player != undefined) {
       player.unbindKeyDown();
       player = null;
+      addStyleButton();
     }
+     
     var e = document.getElementById("selectItems");
     difficulty = e.options[e.selectedIndex].value;
     cellSize = mazeCanvas.width / difficulty;
@@ -580,6 +591,7 @@ function rand(max) {
     player = new Player(maze, mazeCanvas, cellSize, displayVictoryMess, sprite);
     if (document.getElementById("mazeContainer").style.opacity < "100") {
       document.getElementById("mazeContainer").style.opacity = "100";
+       
     }
   }
   
